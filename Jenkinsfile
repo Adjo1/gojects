@@ -4,7 +4,7 @@ pipeline{
         stage('initialisation'){
             steps{
                 echo 'initialisation'
-                sh jenkins --version
+                sh 'jenkins --version'
             }
         }
         stage('build'){
