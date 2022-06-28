@@ -10,6 +10,7 @@ pipeline{
         stage('build'){
             steps{
                 echo'the building'
+                 sh 'docker build -t exemple:${BUILD_ID} .'
             }
         }
         stage('test'){
